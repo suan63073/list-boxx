@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Loading NLP Test Page...</title>
+
+  <script>
+    // Simulate delayed title update
+    setTimeout(() => {
+      document.title = "NLP Listbox Title Automation Page";
+    }, 2000);
+  </script>
+
+  <style>
+    body { font-family: Arial; }
+    .container { margin-top: 50px; display: none; }
+  </style>
+</head>
+
+<body>
+
+<h2>NLP Test Page</h2>
+<p>Elements will load after a delay...</p>
+
+<div id="listboxContainer" class="container">
+
+  <h3>Sample Listbox</h3>
+
+  <!-- LISTBOX WITH TITLE -->
+  <select id="sampleListbox" size="5" title="countries-listbox">
+    <option>India</option>
+    <option>USA</option>
+    <option>Germany</option>
+    <option>France</option>
+  </select>
+
+</div>
+
+<script>
+  // Simulate delayed element visibility
+  setTimeout(() => {
+    document.getElementById("listboxContainer").style.display = "block";
+  }, 4000);
+</script>
+
+</body>
+</html>
